@@ -146,6 +146,7 @@ main > section{
 
   .team-img-container{
     grid-template-columns: repeat(1, 1fr);
+    gap:24px;
   }
   .our-features{
     margin-left:20px;
@@ -157,6 +158,14 @@ main > section{
 @media screen and (min-width:576px) and (max-width: 992px) {
   .teams{
     flex-direction:column;
+  }
+
+  .team-img-container, .facts-container{
+    grid-template-columns: 1fr;
+  }
+  .facts-container{
+         justify-items: center;
+         gap: 24px;
   }
    .our-features{
     margin: 50px auto;
